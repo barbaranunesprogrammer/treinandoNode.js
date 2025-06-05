@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 
 var server = http.createServer(function (request, response) {
-    response.writeHead(200, { "Content-Type": "text/html" });
+    response.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
     if (request.url === "/") {
         response.write("<h1>Bem-vindo ao meu site pessoal!</h1>");
         response.end();
